@@ -1,0 +1,16 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"gen:grpc": "protoc -I=.. proto/hello.proto --js_out=import_style=commonjs:."
+  },
+	 "dependencies": {
+    "@grpc/grpc-js": "~1.1.8",
+    "@grpc/proto-loader": "~0.5.0",
+    "async": "~3.2.3",
+    "google-protobuf": "~3.14.0",
+    "lodash": "~4.17.0"
+  }
+}
