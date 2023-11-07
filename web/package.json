@@ -1,8 +1,10 @@
 {
   "name": "web",
   "version": "0.1.0",
-  "description": "gRPC-Web CommonJS client example",
   "license": "Apache-2.0",
+	"scripts": {
+		"gen:grpc": "protoc -I=.. proto/hello.proto --grpc-web_out=import_style=commonjs,mode=grpcwebtext:."
+	},
   "dependencies": {
     "google-protobuf": "~3.14.0",
     "grpc-web": "~1.4.2"
