@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "license": "Apache-2.0",
 	"scripts": {
+		"dev": "webpack ./client.js",
 		"gen:grpc": "protoc -I=.. proto/hello.proto --grpc-web_out=import_style=commonjs,mode=grpcwebtext:."
 	},
   "dependencies": {
@@ -11,6 +12,7 @@
   },
   "devDependencies": {
     "webpack": "~5.82.1",
+		"browserify": "^16.2.2",
     "webpack-cli": "~5.1.1"
   }
 }
